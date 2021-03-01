@@ -24,6 +24,7 @@ else:
     print("VAT Check: Consistent")
 
 print(f"Invoice Value: {inv_value}")
+print("FYI, the Tesco VAT number is 220430231")
 
 
 
