@@ -39,14 +39,14 @@ if vat5:
     if vat20 == False:
         total_vat = vat5_sum
         net_total = sum(numbers5)
-        vat_check = net_total
+        vat_check = net_total*0.05
                     
 if vat20 and vat5:
     total_vat = vat20_sum + vat5_sum
     net_total = sum(numbers20) + sum(numbers5)
     vat_check = (sum(numbers20)*0.2) + (sum(numbers5)*0.05)
 
-    
+#Printing the values    
 print(f"Goods Value: {inv_value - total_vat}")
 print(f"Total VAT: {total_vat}")
 
