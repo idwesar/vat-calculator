@@ -21,7 +21,6 @@ def main():
 
     # Calculating - do not input here
     total_vat = 0
-    net_total = 0
     vat_check = 0
 
     if vat20:
@@ -30,7 +29,6 @@ def main():
         print(f"VAT at 20%: {vat20_sum}")
  
         total_vat += vat20_sum
-        net_total += sum(numbers20)
         vat_check += sum(numbers20)*0.2
 
     if vat5:
@@ -39,7 +37,6 @@ def main():
         print(f"VAT at 5%: {vat5_sum}")
 
         total_vat += vat5_sum
-        net_total += sum(numbers5)
         vat_check += sum(numbers5)*0.05
 
     #Printing the values    
