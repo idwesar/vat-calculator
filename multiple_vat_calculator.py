@@ -62,8 +62,6 @@ def main():
         print("VAT Check: Consistent")
 
     print(f"Invoice Value: {inv_value}")
-    if vat20 and vat5 == False:
-        print("FYI, the Tesco VAT number is 220430231")
 
 
 if __name__ == "__main__":
