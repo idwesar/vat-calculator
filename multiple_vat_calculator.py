@@ -29,7 +29,7 @@ def main():
     vat20 = False if (len(numbers20) == 0) else True
     vat5 = False if (len(numbers5) == 0) else True
 
-    # Calculating
+    # Calculating - do not input here
     total_vat = 0
     net_total = 0
     vat_check = 0
