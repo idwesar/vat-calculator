@@ -1,3 +1,5 @@
+##old version, 20% VAT only
+
 def calc_vat(n):
     return n*0.2
 
