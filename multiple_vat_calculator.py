@@ -6,24 +6,14 @@ def calc_vat(value, percent):
     return value * (percent*0.01)
 
 
-def calc_vat20(x):
-    '''20% VAT calculation'''
-    return calc_vat(x, 20)
-
-
-def calc_vat5(x):
-    '''5% VAT calculation'''
-    return calc_vat(x, 5)
-
-
 def main():
     '''main funcion'''
 
     # Values to input
     # TODO: Look up argparse and implement with that
     inv_value = 10
-    numbers20 = [1]
-    numbers5 = [1, 1, 0.5]
+    numbers20 = [2, 5, 8, 16.44]
+    numbers5 = [1, 5, 0.5]
 
     # Checking which VAT values to run
     vat20 = False if (len(numbers20) == 0) else True
@@ -36,7 +26,7 @@ def main():
 
     if vat20:
         numbers20 = [float(l) for l in numbers20]
-        vat20_sum = sum([calc_vat20(n) for n in numbers20])
+        vat20_sum = sum([calc_vat(n, 20) for n in numbers20])
         print(f"VAT at 20%: {vat20_sum}")
  
         total_vat += vat20_sum
@@ -45,7 +35,7 @@ def main():
 
     if vat5:
         numbers5 = [float(l) for l in numbers5]
-        vat5_sum = sum([calc_vat5(n) for n in numbers5])
+        vat5_sum = sum([calc_vat(n, 5) for n in numbers5])
         print(f"VAT at 5%: {vat5_sum}")
 
         total_vat += vat5_sum
