@@ -10,9 +10,29 @@ def main():
     '''main funcion'''
 
     # Values to input
-    inv_value = 10
-    numbers20 = [2, 5, 8, 16.44]
-    numbers5 = [1, 5, 0.5]
+    inv_value = input("What is the total of the invoice/receipt (including VAT)? ")
+    twenty = input("What values are subject to 20% VAT? If none, please type 'none'. Please separate values with a comma and a space. ")
+    five = input("What values are subject to 5% VAT? If none, please type 'none'. Please separate values with a comma and a space. ")
+    
+    numbers20 = []
+    numbers5 = []
+    
+    inv_value = float(inv_value)
+
+    if twenty == "none":
+        numbers20 = []
+    else:
+        input20 = list(twenty.split(", "))
+        for x in input20:
+            numbers20.append(float(x))
+    
+    if five == "none":
+        numbers5 = []
+    else:
+     input5 = list(five.split(", "))
+     for x in input5:
+        numbers5.append(float(x))
+
 
     # Checking which VAT values to run
     vat20 = False if (len(numbers20) == 0) else True
