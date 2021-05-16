@@ -1,5 +1,5 @@
 # VAT Calculator
-A simple VAT calculator for when you need to calculae the VAT on a payment, but only part of the payment is VATable.
+A VAT calculator for when you need to calculae the VAT on a payment, but only part of the payment is VATable.
 
 ## How to use
 ### Multiple VAT Calculator
