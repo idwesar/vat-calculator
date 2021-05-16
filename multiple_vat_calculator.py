@@ -9,14 +9,17 @@ def calc_vat(value, percent):
 def main():
     '''main funcion'''
 
-    # Values to input
+    numbers20 = []
+    numbers5 = []
+    
+    # Input statements
+    #TODO: add better input sanitisation, add check for valid input, ask user to re-input if invalid entry
     inv_value = input("What is the total of the invoice/receipt (including VAT)? ")
     twenty = input("What values are subject to 20% VAT? If none, please type 'none'. Please separate values with a comma and a space. ")
     five = input("What values are subject to 5% VAT? If none, please type 'none'. Please separate values with a comma and a space. ")
     
-    numbers20 = []
-    numbers5 = []
     
+    #converting the user input
     inv_value = float(inv_value)
 
     if twenty == "none":
@@ -32,7 +35,6 @@ def main():
      input5 = list(five.split(", "))
      for x in input5:
         numbers5.append(float(x))
-
 
     # Checking which VAT values to run
     vat20 = False if (len(numbers20) == 0) else True
@@ -69,6 +71,10 @@ def main():
 
     print(f"Invoice Value: {inv_value}")
 
-
+#TODO add restart option
+    
+    
 if __name__ == "__main__":
     main()
+    
+    
