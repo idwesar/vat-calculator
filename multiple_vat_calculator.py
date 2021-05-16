@@ -10,7 +10,6 @@ def main():
     '''main funcion'''
 
     # Values to input
-    # TODO: Look up argparse and implement with that
     inv_value = 10
     numbers20 = [2, 5, 8, 16.44]
     numbers5 = [1, 5, 0.5]
