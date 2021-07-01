@@ -15,6 +15,8 @@ For when you have net figures and need to calculate the gross. Simple and functi
  - input numbers as a list where directed in the code
  - input the desired VAT you wish to calculate
 
+**N.B: The Reverse and standard VAT Calculators care currently being reworked to use a central set of core functions (Functions.py)**
+
 
 ## The Others
 ### > The Multiple VAT Calculator
